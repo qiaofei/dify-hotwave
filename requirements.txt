@@ -1,0 +1,5 @@
+dify_plugin~=0.0.1b67
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+brotlicffi>=1.0.9
+lxml>=4.9.0

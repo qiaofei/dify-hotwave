@@ -1,0 +1,17 @@
+identity:
+  author: qiaofei
+  name: heatwave
+  label:
+    en_US: heatwave
+    zh_Hans: heatwave
+    pt_BR: heatwave
+  description:
+    en_US: 国内热点新闻
+    zh_Hans: 国内热点新闻
+    pt_BR: 国内热点新闻
+  icon: icon.svg
+tools:
+  - tools/heatwave.yaml
+extra:
+  python:
+    source: provider/heatwave.py

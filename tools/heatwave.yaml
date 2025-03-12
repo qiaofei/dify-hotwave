@@ -1,0 +1,16 @@
+identity:
+  name: heatwave
+  author: qiaofei
+  label:
+    en_US: Hot Topics
+    zh_Hans: 热搜聚合
+    pt_BR: Hot Topics
+description:
+  human:
+    en_US: Get hot topics from multiple Chinese social platforms
+    zh_Hans: 获取百度、微博、知乎、抖音等平台的热搜话题
+    pt_BR: Get hot topics from multiple Chinese social platforms
+  llm: 获取各大中文社交平台的实时热搜话题及链接
+extra:
+  python:
+    source: tools/heatwave.py

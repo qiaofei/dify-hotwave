@@ -1,80 +1,69 @@
-# Heatwave Plugin
+# 热浪插件
 
-**Author:** qiaofei  
-**Version:** 0.0.2  
-**Type:** tool
+**作者:** qiaofei  
+**版本:** 0.0.2  
+**类型:** tool
 
-## Description
-Heatwave is a powerful trending topics aggregator plugin for Dify that collects and displays real-time hot topics from major Chinese social media and content platforms. Currently supports Weibo, Zhihu, WeChat, Douyin, and Baidu.
+## 描述
+热浪是一个强大的 Dify 趋势话题聚合插件，用于收集和展示来自中国主要社交媒体和内容平台的实时热门话题。目前支持微博、知乎、微信、抖音和百度。
 
-## Features
-- Real-time trending topics aggregation
-- Multi-platform support (Weibo, Zhihu, WeChat, Douyin, Baidu)
-- Structured data output in markdown format
-- Customizable platform selection
-- Clean and user-friendly display format
+## 特点
+- 实时趋势话题聚合
+- 多平台支持（微博、知乎、微信、抖音、百度）
+- 结构化的 markdown 格式数据输出
+- 可自定义平台选择
+- 清晰友好的显示格式
 
-## Installation
+## 安装
 ```bash
-# Install required dependencies
+# 安装所需依赖
 pip install -r requirements.txt
 ```
 
-## Usage
-```python
-from plugins.dify.heatwave.tools.heatwave import HeatwaveTool
+## 使用方法
+- 下载.difypkg文件前往dify平台安装即可
+- 下载源码自行打包
 
-# Initialize the tool
-tool = HeatwaveTool()
+## 配置
+无需额外配置。插件可以直接使用默认设置。
 
-# Get trending topics from all supported platforms
-results = tool._invoke({})
+## API 访问限制
+- 建议保持合理的请求间隔
+- 遵循各平台的 API 使用规范
+- 默认缓存时间：5分钟
 
-# Get trending topics from specific platforms
-results = tool._invoke({
-    'platforms': ['微博', '知乎']
-})
-```
-
-## Configuration
-No additional configuration required. The plugin works out of the box with default settings.
-
-## API Rate Limits
-- Recommended to maintain reasonable request intervals
-- Follow each platform's API usage guidelines
-- Default cache time: 5 minutes
-
-## Output Format
-The plugin returns data in markdown format:
+## 输出格式
+插件以 markdown 格式返回数据：
 ```markdown
-# Today's Trending Topics
+# 今日热门话题
 
-## Platform Name
-1. [Topic Title](Topic URL)
-2. [Topic Title](Topic URL)
+## 平台名称
+1. [话题标题](话题链接)
+2. [话题标题](话题链接)
 ...
 ```
 
-## Dependencies
+## 依赖
 - Python 3.12+
 - requests
 - beautifulsoup4
 
-## Privacy & Security
-- Only collects publicly available data
-- No user data collection or storage
-- Complies with platform terms of service
-- For detailed privacy information, see [PRIVACY.md](PRIVACY.md)
+## 隐私与安全
+- 仅收集公开可用数据
+- 不收集或存储用户数据
+- 遵守平台服务条款
+- 详细隐私信息请参见 [PRIVACY.md](PRIVACY.md)
 
-## Contributing
-Please read [DEVELOPER_GUIDELINES.md](DEVELOPER_GUIDELINES.md) for details on our code of conduct and the process for submitting pull requests.
+## 贡献指南
+请阅读 [DEVELOPER_GUIDELINES.md](DEVELOPER_GUIDELINES.md) 了解我们的行为准则和提交拉取请求的流程。
 
-## License
-MIT License
+## 许可证
+MIT 许可证
 
-## Contact
-- Email: qiaofei9@foxmail.com
-- Issues: Please submit via GitHub Issues
+## 联系方式
+- 邮箱: qiaofei9@foxmail.com
+- 问题反馈: 请通过 GitHub Issues 提交
+- 技术爱好者加v联系:felixw1229
 
 
 
